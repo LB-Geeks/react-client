@@ -12,7 +12,7 @@ function NeedAccomodationList() {
             class="list-group-item list-group-item-action active"
             aria-current="true"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
+            data-bs-target="#accomodationFinder"
           >
             I'm the profile of a homeless person. Click me to find accomodation.
           </button>
@@ -20,7 +20,7 @@ function NeedAccomodationList() {
             type="button"
             class="list-group-item list-group-item-action"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
+            data-bs-target="#accomodationFinder"
           >
             I'm the profile of a homeless person. Click me to find accomodation.
           </button>
@@ -28,7 +28,7 @@ function NeedAccomodationList() {
             type="button"
             class="list-group-item list-group-item-action"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
+            data-bs-target="#accomodationFinder"
           >
             I'm the profile of a homeless person. Click me to find accomodation.
           </button>
@@ -36,7 +36,7 @@ function NeedAccomodationList() {
             type="button"
             class="list-group-item list-group-item-action"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
+            data-bs-target="#accomodationFinder"
           >
             I'm the profile of a homeless person. Click me to find accomodation.
           </button>

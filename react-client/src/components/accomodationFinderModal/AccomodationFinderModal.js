@@ -4,15 +4,15 @@ function AccomodationFinderModal() {
   return (
     <div
       class="modal fade"
-      id="exampleModal"
+      id="accomodationFinder"
       tabindex="-1"
-      aria-labelledby="exampleModalLabel"
+      aria-labelledby="accomodation finder modal"
       aria-hidden="true"
     >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">
+            <h1 class="modal-title fs-5" id="accomodation-finder-label">
               I will launch a search for accomodation
             </h1>
             <button
