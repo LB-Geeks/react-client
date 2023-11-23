@@ -7,10 +7,9 @@ function StatBox() {
         <div class="col-sm-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
+              <h5 class="card-title">I'm a statistics box</h5>
               <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
+                I will show some relevant charts, trends, etc.
               </p>
               <a href="#" class="btn btn-primary">
                 Go somewhere
@@ -21,10 +20,9 @@ function StatBox() {
         <div class="col-sm-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
+              <h5 class="card-title">I'm a statistics box</h5>
               <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
+                I will show some relevant charts, trends, etc.
               </p>
               <a href="#" class="btn btn-primary">
                 Go somewhere
@@ -35,10 +33,9 @@ function StatBox() {
         <div class="col-sm-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
+              <h5 class="card-title">I'm a statistics box</h5>
               <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
+                I will show some relevant charts, trends, etc.
               </p>
               <a href="#" class="btn btn-primary">
                 Go somewhere
