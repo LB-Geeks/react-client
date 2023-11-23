@@ -22,7 +22,14 @@ function AccomodationFinderModal() {
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">...and will show the results here.</div>
+          <div class="d-flex justify-content-center mt-3">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+          <div class="modal-body">
+            ...and will show the results here once they are loaded.
+          </div>
           <div class="modal-footer">
             <button
               type="button"
