@@ -9,7 +9,7 @@ function NeedAccomodationList() {
         <div class="list-group max-width-80">
           <button
             type="button"
-            class="list-group-item list-group-item-action active"
+            class="list-group-item list-group-item-action"
             aria-current="true"
             data-bs-toggle="modal"
             data-bs-target="#accomodationFinder"
