@@ -4,6 +4,7 @@ import axios from "axios";
 import ConfirmedAccomodationModal from "../confirmedAccomodationModal/ConfirmedAccomodationModal";
 
 let accomodationObject = {};
+let guestsObject = {};
 const getAllAccomodation = async () => {
   await axios
     .get(
@@ -11,11 +12,21 @@ const getAllAccomodation = async () => {
     )
     .then((response) => {
       accomodationObject = response.data;
+    })
+  }
+    const getGuests = async () => {
+      await axios
+    .get(
+      "http://localhost:3100/api/allguests?api-key=DriPObREdrocIDRehublyupUbiQAkeGEprlsWudU"
+    )
+    .then((response) => {
+      guestsObject = response.data;
+
     });
 };
 
 await getAllAccomodation();
-
+await getGuests();
 function ConfirmedAccomodationList() {
   return (
     <>
@@ -35,7 +46,7 @@ function ConfirmedAccomodationList() {
               aria-controls="collapseBOne"
             >
               <h6>
-                {accomodationObject[0].host_id} {accomodationObject[0].guest_id}
+              {guestsObject[0].first_name} is staying with First_Charity
               </h6>
             </button>
             <div
@@ -56,39 +67,70 @@ function ConfirmedAccomodationList() {
               </div>
             </div>
           </div>
-          <button
-            type="button"
-            class="list-group-item list-group-item-action"
-            aria-current="true"
-            data-bs-toggle="modal"
-            data-bs-target="#confirmedAccomodation"
-          >
-            I'm a confirmed accomodation for a homeless person.
-          </button>
-          <button
-            type="button"
-            class="list-group-item list-group-item-action"
-            data-bs-toggle="modal"
-            data-bs-target="#confirmedAccomodation"
-          >
-            I'm a confirmed accomodation for a homeless person.
-          </button>
-          <button
-            type="button"
-            class="list-group-item list-group-item-action"
-            data-bs-toggle="modal"
-            data-bs-target="#confirmedAccomodation"
-          >
-            I'm a confirmed accomodation for a homeless person.
-          </button>
-          <button
-            type="button"
-            class="list-group-item list-group-item-action"
-            data-bs-toggle="modal"
-            data-bs-target="#confirmedAccomodation"
-          >
-            I'm a confirmed accomodation for a homeless person.
-          </button>
+          <div class="accordion-item">
+            <button
+              type="button"
+              class="list-group-item list-group-item-action d-flex justify-content-start accordion-button collapsed"
+              aria-current="true"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseBOne"
+              aria-expanded="false"
+              aria-controls="collapseBOne"
+            >
+              <h6>
+              {guestsObject[1].first_name} is staying with Second_Charity
+              </h6>
+            </button>
+            <div
+              id="collapseBOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the{" "}
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button
+              type="button"
+              class="list-group-item list-group-item-action d-flex justify-content-start accordion-button collapsed"
+              aria-current="true"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseBOne"
+              aria-expanded="false"
+              aria-controls="collapseBOne"
+            >
+              <h6>
+              {guestsObject[2].first_name} is staying with Third_Charity
+              </h6>
+            </button>
+            <div
+              id="collapseBOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the{" "}
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
         </div>
 
         <ConfirmedAccomodationModal />
