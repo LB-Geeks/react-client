@@ -8,20 +8,19 @@ let guestsObject = {};
 const getAllAccomodation = async () => {
   await axios
     .get(
-      "http://localhost:3100/api/allbookings?api-key=DriPObREdrocIDRehublyupUbiQAkeGEprlsWudU"
+      "http://localhost:8000/api/allbookings?api-key=DriPObREdrocIDRehublyupUbiQAkeGEprlsWudU"
     )
     .then((response) => {
       accomodationObject = response.data;
-    })
-  }
-  const getGuests = async () => {
-      await axios
+    });
+};
+const getGuests = async () => {
+  await axios
     .get(
-      "http://localhost:3100/api/allguests?api-key=DriPObREdrocIDRehublyupUbiQAkeGEprlsWudU"
+      "http://localhost:8000/api/allguests?api-key=DriPObREdrocIDRehublyupUbiQAkeGEprlsWudU"
     )
     .then((response) => {
       guestsObject = response.data;
-
     });
 };
 
@@ -46,7 +45,7 @@ function ConfirmedAccomodationList() {
               aria-controls="collapseBOne"
             >
               <h6>
-              {guestsObject[0].first_name} is staying with First Charity
+                {guestsObject[0].first_name} is staying with First Charity
               </h6>
             </button>
             <div
@@ -78,7 +77,7 @@ function ConfirmedAccomodationList() {
               aria-controls="collapseBOne"
             >
               <h6>
-              {guestsObject[1].first_name} is staying with Second Charity
+                {guestsObject[1].first_name} is staying with Second Charity
               </h6>
             </button>
             <div
@@ -110,7 +109,7 @@ function ConfirmedAccomodationList() {
               aria-controls="collapseBOne"
             >
               <h6>
-              {guestsObject[2].first_name} is staying with Third Charity
+                {guestsObject[2].first_name} is staying with Third Charity
               </h6>
             </button>
             <div

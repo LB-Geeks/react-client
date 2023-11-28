@@ -5,7 +5,7 @@ let accomodationObject = {};
 const getAccomodation = async () => {
   await axios
     .get(
-      "http://localhost:3100/api/findLodgings?guest_id=8b6fb1c1-268b-4d4f-9615-2564bdf3d7e8&post_code=EC2M%203YD&distance=5&api-key=DriPObREdrocIDRehublyupUbiQAkeGEprlsWudU"
+      "http://localhost:8000/api/findLodgings?guest_id=8b6fb1c1-268b-4d4f-9615-2564bdf3d7e8&post_code=EC2M%203YD&distance=5&api-key=DriPObREdrocIDRehublyupUbiQAkeGEprlsWudU"
     )
     .then((response) => {
       accomodationObject = response.data;
@@ -17,8 +17,19 @@ function AccomodationFinderModal(props) {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
+    console.log(isLoaded);
     getAccomodation();
-    setIsLoaded(true);
+  }, []);
+
+  const setTimer = () => {
+    setTimeout(() => {
+      setIsLoaded(true);
+    }, 20000);
+  };
+
+  useEffect(() => {
+    setTimer();
+    console.log(isLoaded);
   }, []);
 
   return (
@@ -43,14 +54,20 @@ function AccomodationFinderModal(props) {
             ></button>
           </div>
           <div class="d-flex justify-content-center mt-3">
-            {isLoaded && (
-              <div class="spinner-border" role="status">
-                <span class="visually-hidden">Loading...</span>
+            {!isLoaded && (
+              <div>
+                <div class="d-flex justify-content-center mt-3">
+                  <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+                <div class="modal-body">...confirming accomodation.</div>
               </div>
             )}
           </div>
           <div class="modal-body">
-            ...and will show the results here once they are loaded.
+            {isLoaded &&
+              "Accomodation found for Lilly Miller with host Alistair Forbes at 5 Alvington Crescent, E8 2NW"}
           </div>
           <div class="modal-footer">
             <button

@@ -7,7 +7,7 @@ let guestsObject = {};
 const getAllGuests = async () => {
   await axios
     .get(
-      "http://localhost:3100/api/allguests?api-key=DriPObREdrocIDRehublyupUbiQAkeGEprlsWudU"
+      "http://localhost:8000/api/allguests?api-key=DriPObREdrocIDRehublyupUbiQAkeGEprlsWudU"
     )
     .then((response) => {
       guestsObject = response.data;
