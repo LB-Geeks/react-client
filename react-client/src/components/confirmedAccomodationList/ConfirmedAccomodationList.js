@@ -46,7 +46,7 @@ function ConfirmedAccomodationList() {
               aria-controls="collapseBOne"
             >
               <h6>
-              {guestsObject[0].first_name} is staying with First Charity
+              {guestsObject[0].first_name} is staying with Lucy
               </h6>
             </button>
             <div
@@ -78,7 +78,7 @@ function ConfirmedAccomodationList() {
               aria-controls="collapseBOne"
             >
               <h6>
-              {guestsObject[1].first_name} is staying with Second Charity
+              {guestsObject[1].first_name} is staying with James
               </h6>
             </button>
             <div
@@ -110,7 +110,7 @@ function ConfirmedAccomodationList() {
               aria-controls="collapseBOne"
             >
               <h6>
-              {guestsObject[2].first_name} is staying with Third Charity
+              {guestsObject[2].first_name} is staying with Rebecca
               </h6>
             </button>
             <div

@@ -7,39 +7,48 @@ function StatBox() {
         <div class="col-sm-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">I'm a statistics box</h5>
+              <h5 class="card-title">46</h5>
               <p class="card-text">
-                I will show some relevant charts, trends, etc.
+                Number of Guests Who Need Accomodation
               </p>
-              <a href="#" class="btn btn-primary">
-                Go somewhere
-              </a>
+
+              <button href="#" class="btn btn-primary" onClick="window.open('https://www.gov.uk/government/statistics/statutory-homelessness-in-england-january-to-march-2023/statutory-homelessness-in-england-january-to-march-2023');">
+     <span class="icon">Read More</span>
+</button>
+      
+              
             </div>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">I'm a statistics box</h5>
+              <h5 class="card-title">59</h5>
               <p class="card-text">
-                I will show some relevant charts, trends, etc.
+                Number of Remaining Available Hosts
               </p>
-              <a href="#" class="btn btn-primary">
-                Go somewhere
-              </a>
+
+              <button href="#" class="btn btn-primary" onClick="window.open('https://www.gov.uk/government/statistics/statutory-homelessness-in-england-january-to-march-2023/statutory-homelessness-in-england-january-to-march-2023');">
+     <span class="icon">Read More</span>
+</button>
+      
+              
             </div>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">I'm a statistics box</h5>
+              <h5 class="card-title">16</h5>
               <p class="card-text">
-                I will show some relevant charts, trends, etc.
+                Number of Lodged Guests Tonight
               </p>
-              <a href="#" class="btn btn-primary">
-                Go somewhere
-              </a>
+
+              <button href="#" class="btn btn-primary" onClick="window.open('https://www.gov.uk/government/statistics/statutory-homelessness-in-england-january-to-march-2023/statutory-homelessness-in-england-january-to-march-2023');">
+     <span class="icon">Read More</span>
+</button>
+      
+              
             </div>
           </div>
         </div>
