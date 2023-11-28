@@ -50,7 +50,7 @@ const steps = [
  
 // Creating our own theme
 const theme = {
-    background: '##f8f8ff',
+    background: '#f8f8ff',
     headerBgColor: '#eb2427',
     headerFontSize: '20px',
     botBubbleColor: '#eb2427',
@@ -83,14 +83,9 @@ function App() {
             </ThemeProvider>
       <main>
         <StatBox />
-        <div class="container d-flex mt-4">
+<div class="container d-flex mt-4">
           <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
+          <input type="text" class="search-click" name="" placeholder="search here..." />
             <button class="d-flex btn btn-outline-success" type="submit">
               Search
             </button>
@@ -98,8 +93,8 @@ function App() {
         </div>
         <div class="container text-center">
           <div class="row">
-            <NeedAccomodationList />
-            <ConfirmedAccomodationList />
+        <NeedAccomodationList />
+<ConfirmedAccomodationList />
           </div>
         </div>
       </main>
