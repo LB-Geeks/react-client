@@ -6,7 +6,10 @@ import NeedAccomodationList from "./components/needAccomodationList/NeedAccomoda
 import StatBox from "./components/statBox/StatBox";
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
- 
+
+
+
+
 const steps = [
     {
         id: '0',
@@ -70,20 +73,18 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+   
       <ThemeProvider theme={theme}>
                 <ChatBot
- 
-                    // This appears as the header
-                    // text for the chat bot
                     headerTitle="HelpBot"
                     steps={steps}
                     {...config}
- 
                 />
             </ThemeProvider>
       <main>
         <StatBox />
 <div class="container d-flex mt-4">
+          <image href="photo.jpg"><div id="container"></div></image> 
           <form class="d-flex" role="search">
           <input type="text" class="search-click" name="" placeholder="search here..." />
             <button class="d-flex btn btn-outline-success" type="submit">

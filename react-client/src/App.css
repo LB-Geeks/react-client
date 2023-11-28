@@ -87,3 +87,9 @@
   color: white !important;
   border-left: 4px solid #f00;
 }
+.img{
+  left: 1100px;
+  width: 100px;
+  height: 60px;
+  position: absolute;
+}

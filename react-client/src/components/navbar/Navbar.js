@@ -63,6 +63,7 @@ function Navbar() {
                 Disabled
               </a>
             </li>
+            <img class="img" src="photo.jpg" />
           </ul>
         </div>
       </div>
