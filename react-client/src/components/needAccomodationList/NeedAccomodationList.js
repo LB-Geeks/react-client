@@ -211,7 +211,7 @@ function NeedAccomodationList() {
           </div>
         </div>
 
-        <AccomodationFinderModal />
+        <AccomodationFinderModal guest={guestsObject} />
         <nav aria-label="Page navigation example">
           <ul class="pagination d-flex justify-content-center mt-3">
             <li class="page-item disabled">

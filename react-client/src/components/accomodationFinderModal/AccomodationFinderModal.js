@@ -1,6 +1,21 @@
 import React from "react";
+import axios from "axios";
 
-function AccomodationFinderModal() {
+let accomodationObject = {};
+const getAccomodation = async () => {
+  await axios
+    .get(
+      "http://localhost:3100/api/findLodgings?guest_id=8b6fb1c1-268b-4d4f-9615-2564bdf3d7e8&post_code=EC2M%203YD&distance=5&api-key=DriPObREdrocIDRehublyupUbiQAkeGEprlsWudU"
+    )
+    .then((response) => {
+      accomodationObject = response.data;
+      console.log(accomodationObject);
+    });
+};
+
+await getAccomodation();
+
+function AccomodationFinderModal(props) {
   return (
     <div
       class="modal fade"
