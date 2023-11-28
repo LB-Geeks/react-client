@@ -1,10 +1,22 @@
 import React from "react";
+import axios from "axios";
 
 import ConfirmedAccomodationModal from "../confirmedAccomodationModal/ConfirmedAccomodationModal";
 
 function ConfirmedAccomodationList() {
+  const getAllAccomodation = () => {
+    axios
+      .get(
+        "http://localhost:3100/api/allbookings?api-key=DriPObREdrocIDRehublyupUbiQAkeGEprlsWudU"
+      )
+      .then((response) => {
+        console.log(response.data);
+      });
+  };
+
   return (
     <>
+      {getAllAccomodation()}
       <div class="container col mt-4">
         <div class="list-group">
           <button

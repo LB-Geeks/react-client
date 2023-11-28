@@ -1,10 +1,26 @@
 import React from "react";
+import axios from "axios";
 
 import AccomodationFinderModal from "../accomodationFinderModal/AccomodationFinderModal";
+
+let guestsObject = {};
+const getAllGuests = async () => {
+  await axios
+    .get(
+      "http://localhost:3100/api/allguests?api-key=DriPObREdrocIDRehublyupUbiQAkeGEprlsWudU"
+    )
+    .then((response) => {
+      guestsObject = response.data;
+      console.log(guestsObject[0].first_name);
+    });
+};
+
+await getAllGuests();
 
 function NeedAccomodationList() {
   return (
     <>
+      {}
       <div class="container col mt-4">
         <div class="list-group">
           <button
@@ -14,7 +30,13 @@ function NeedAccomodationList() {
             data-bs-toggle="modal"
             data-bs-target="#accomodationFinder"
           >
-            I'm the profile of a homeless person. Click me to find accomodation.
+            <h5>
+              {guestsObject[0].first_name} {guestsObject[0].last_name}
+            </h5>
+
+            <a href="#" class="btn btn-primary">
+              List Requirements
+            </a>
           </button>
           <button
             type="button"
