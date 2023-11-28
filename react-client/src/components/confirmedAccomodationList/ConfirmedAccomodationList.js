@@ -2,7 +2,7 @@ import React from "react";
 
 import AccomodationFinderModal from "../accomodationFinderModal/AccomodationFinderModal";
 
-function NeedAccomodationList() {
+function ConfirmedAccomodationList() {
   return (
     <>
       <div class="container col mt-4">
@@ -75,4 +75,4 @@ function NeedAccomodationList() {
   );
 }
 
-export default NeedAccomodationList;
+export default ConfirmedAccomodationList;
