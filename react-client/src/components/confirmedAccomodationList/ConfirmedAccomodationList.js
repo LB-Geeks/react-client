@@ -14,7 +14,7 @@ const getAllAccomodation = async () => {
       accomodationObject = response.data;
     })
   }
-    const getGuests = async () => {
+  const getGuests = async () => {
       await axios
     .get(
       "http://localhost:3100/api/allguests?api-key=DriPObREdrocIDRehublyupUbiQAkeGEprlsWudU"
@@ -46,7 +46,7 @@ function ConfirmedAccomodationList() {
               aria-controls="collapseBOne"
             >
               <h6>
-              {guestsObject[0].first_name} is staying with First_Charity
+              {guestsObject[0].first_name} is staying with First Charity
               </h6>
             </button>
             <div
@@ -78,7 +78,7 @@ function ConfirmedAccomodationList() {
               aria-controls="collapseBOne"
             >
               <h6>
-              {guestsObject[1].first_name} is staying with Second_Charity
+              {guestsObject[1].first_name} is staying with Second Charity
               </h6>
             </button>
             <div
@@ -110,7 +110,7 @@ function ConfirmedAccomodationList() {
               aria-controls="collapseBOne"
             >
               <h6>
-              {guestsObject[2].first_name} is staying with Third_Charity
+              {guestsObject[2].first_name} is staying with Third Charity
               </h6>
             </button>
             <div
