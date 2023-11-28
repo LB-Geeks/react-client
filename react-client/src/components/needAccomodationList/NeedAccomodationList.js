@@ -6,6 +6,19 @@ function NeedAccomodationList() {
   return (
     <>
       <div class="container d-flex justify-content-center mt-4">
+        <form class="d-flex max-width-60" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="d-flex btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+      <div class="container d-flex justify-content-center mt-4">
         <div class="list-group max-width-80">
           <button
             type="button"
