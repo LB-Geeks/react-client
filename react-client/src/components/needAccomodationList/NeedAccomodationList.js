@@ -17,71 +17,151 @@ const getAllGuests = async () => {
 
 await getAllGuests();
 
+// const mapGuests = () => {
+//   guestsObject.map((guest) => {
+//     return (
+//       <div class="accordion-item">
+//       <button
+//         type="button"
+//         class="list-group-item list-group-item-action d-flex justify-content-start accordion-button collapsed"
+//         aria-current="true"
+//         data-bs-toggle="collapse"
+//         data-bs-target={"#" + guest.id}
+//         aria-expanded="false"
+//         aria-controls="collapseTwo"
+//       >
+//         <h6>
+//           {guestsObject[0].first_name} {guest.last_name}
+//         </h6>
+//       </button>
+//       <div
+//         id={guest.id}
+//         class="accordion-collapse collapse"
+//         data-bs-parent="#accordionExample"
+//       >
+//         <div class="accordion-body">
+//           <strong>This is the second item's accordion body.</strong> It is
+//           hidden by default, until the collapse plugin adds the
+//           appropriate classes that we use to style each element. These
+//           classes control the overall appearance, as well as the showing
+//           and hiding via CSS transitions. You can modify any of this with
+//           custom CSS or overriding our default variables. It's also worth
+//           noting that just about any HTML can go within the{" "}
+//           <code>.accordion-body</code>, though the transition does limit
+//           overflow.
+//         </div>
+//       </div>
+//     </div>
+//     );
+//   })
+// }
+
+// const guests = <>{mapGuests()}</>;
+// console.log(guests);
+
 function NeedAccomodationList() {
   return (
     <>
-      {}
       <div class="container col mt-4">
         <div class="list-group accordion" id="accordionExample">
           <li class="list-group-item list-group-item-action bg-grey">
             <h5>List of guests needing accomodation</h5>
           </li>
           <div class="accordion-item">
-            <button
-              type="button"
-              class="list-group-item list-group-item-action d-flex justify-content-start accordion-button collapsed"
-              aria-current="true"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              <h6>
-                {guestsObject[0].first_name} {guestsObject[0].last_name}
-              </h6>
-            </button>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <button
-            type="button"
-            class="list-group-item list-group-item-action"
-            data-bs-toggle="modal"
-            data-bs-target="#accomodationFinder"
-          >
-            I'm the profile of a homeless person. Click me to find accomodation.
-          </button>
-          <button
-            type="button"
-            class="list-group-item list-group-item-action"
-            data-bs-toggle="modal"
-            data-bs-target="#accomodationFinder"
-          >
-            I'm the profile of a homeless person. Click me to find accomodation.
-          </button>
-          <button
-            type="button"
-            class="list-group-item list-group-item-action"
-            data-bs-toggle="modal"
-            data-bs-target="#accomodationFinder"
-          >
-            I'm the profile of a homeless person. Click me to find accomodation.
-          </button>
+      <button
+        type="button"
+        class="list-group-item list-group-item-action d-flex justify-content-start accordion-button collapsed"
+        aria-current="true"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseOne"
+        aria-expanded="false"
+        aria-controls="collapseOne"
+      >
+        <h6>
+          {guestsObject[0].first_name} {guestsObject[0].last_name}
+        </h6>
+      </button>
+      <div
+        id="collapseOne"
+        class="accordion-collapse collapse"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is
+          hidden by default, until the collapse plugin adds the
+          appropriate classes that we use to style each element. These
+          classes control the overall appearance, as well as the showing
+          and hiding via CSS transitions. You can modify any of this with
+          custom CSS or overriding our default variables. It's also worth
+          noting that just about any HTML can go within the{" "}
+          <code>.accordion-body</code>, though the transition does limit
+          overflow.
+        </div>
+      </div>
+    </div>
+          
+      <button
+        type="button"
+        class="list-group-item list-group-item-action d-flex justify-content-start accordion-button collapsed"
+        aria-current="true"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseTwo"
+        aria-expanded="false"
+        aria-controls="collapseTwo"
+      >
+        <h6>
+          {guestsObject[1].first_name} {guestsObject[1].last_name}
+        </h6>
+      </button>
+      <div
+        id={"collapseTwo"}
+        class="accordion-collapse collapse"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is
+          hidden by default, until the collapse plugin adds the
+          appropriate classes that we use to style each element. These
+          classes control the overall appearance, as well as the showing
+          and hiding via CSS transitions. You can modify any of this with
+          custom CSS or overriding our default variables. It's also worth
+          noting that just about any HTML can go within the{" "}
+          <code>.accordion-body</code>, though the transition does limit
+          overflow.
+        </div>
+      </div>
+    
+      <button
+        type="button"
+        class="list-group-item list-group-item-action d-flex justify-content-start accordion-button collapsed"
+        aria-current="true"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseThree"
+        aria-expanded="false"
+        aria-controls="collapseThree"
+      >
+        <h6>
+          {guestsObject[2].first_name} {guestsObject[2].last_name}
+        </h6>
+      </button>
+      <div
+        id={"collapseThree"}
+        class="accordion-collapse collapse"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is
+          hidden by default, until the collapse plugin adds the
+          appropriate classes that we use to style each element. These
+          classes control the overall appearance, as well as the showing
+          and hiding via CSS transitions. You can modify any of this with
+          custom CSS or overriding our default variables. It's also worth
+          noting that just about any HTML can go within the{" "}
+          <code>.accordion-body</code>, though the transition does limit
+          overflow.
+        </div>
+      </div>
+
         </div>
 
         <AccomodationFinderModal />
