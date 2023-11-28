@@ -73,7 +73,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-   
       <ThemeProvider theme={theme}>
                 <ChatBot
                     headerTitle="HelpBot"
