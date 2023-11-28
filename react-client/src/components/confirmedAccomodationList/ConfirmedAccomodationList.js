@@ -1,6 +1,6 @@
 import React from "react";
 
-import AccomodationFinderModal from "../accomodationFinderModal/AccomodationFinderModal";
+import ConfirmedAccomodationModal from "../confirmedAccomodationModal/ConfirmedAccomodationModal";
 
 function ConfirmedAccomodationList() {
   return (
@@ -12,37 +12,37 @@ function ConfirmedAccomodationList() {
             class="list-group-item list-group-item-action"
             aria-current="true"
             data-bs-toggle="modal"
-            data-bs-target="#accomodationFinder"
+            data-bs-target="#confirmedAccomodation"
           >
-            I'm the profile of a homeless person. Click me to find accomodation.
+            I'm a confirmed accomodation for a homeless person.
           </button>
           <button
             type="button"
             class="list-group-item list-group-item-action"
             data-bs-toggle="modal"
-            data-bs-target="#accomodationFinder"
+            data-bs-target="#confirmedAccomodation"
           >
-            I'm the profile of a homeless person. Click me to find accomodation.
+            I'm a confirmed accomodation for a homeless person.
           </button>
           <button
             type="button"
             class="list-group-item list-group-item-action"
             data-bs-toggle="modal"
-            data-bs-target="#accomodationFinder"
+            data-bs-target="#confirmedAccomodation"
           >
-            I'm the profile of a homeless person. Click me to find accomodation.
+            I'm a confirmed accomodation for a homeless person.
           </button>
           <button
             type="button"
             class="list-group-item list-group-item-action"
             data-bs-toggle="modal"
-            data-bs-target="#accomodationFinder"
+            data-bs-target="#confirmedAccomodation"
           >
-            I'm the profile of a homeless person. Click me to find accomodation.
+            I'm a confirmed accomodation for a homeless person.
           </button>
         </div>
 
-        <AccomodationFinderModal />
+        <ConfirmedAccomodationModal />
         <nav aria-label="Page navigation example">
           <ul class="pagination d-flex justify-content-center mt-3">
             <li class="page-item disabled">
