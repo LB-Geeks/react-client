@@ -30,16 +30,16 @@ function ConfirmedAccomodationList() {
               class="list-group-item list-group-item-action d-flex justify-content-start accordion-button collapsed"
               aria-current="true"
               data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
+              data-bs-target="#collapseBOne"
               aria-expanded="false"
-              aria-controls="collapseTwo"
+              aria-controls="collapseBOne"
             >
               <h6>
                 {accomodationObject[0].host_id} {accomodationObject[0].guest_id}
               </h6>
             </button>
             <div
-              id="collapseTwo"
+              id="collapseBOne"
               class="accordion-collapse collapse"
               data-bs-parent="#accordionExample"
             >
