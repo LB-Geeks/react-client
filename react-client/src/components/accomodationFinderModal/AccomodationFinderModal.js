@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 let accomodationObject = {};
@@ -13,9 +13,14 @@ const getAccomodation = async () => {
     });
 };
 
-await getAccomodation();
-
 function AccomodationFinderModal(props) {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    getAccomodation();
+    setIsLoaded(true);
+  }, []);
+
   return (
     <div
       class="modal fade"
@@ -38,9 +43,11 @@ function AccomodationFinderModal(props) {
             ></button>
           </div>
           <div class="d-flex justify-content-center mt-3">
-            <div class="spinner-border" role="status">
-              <span class="visually-hidden">Loading...</span>
-            </div>
+            {isLoaded && (
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            )}
           </div>
           <div class="modal-body">
             ...and will show the results here once they are loaded.
