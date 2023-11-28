@@ -23,6 +23,9 @@ function NeedAccomodationList() {
       {}
       <div class="container col mt-4">
         <div class="list-group">
+          <li class="list-group-item list-group-item-action bg-grey">
+            <h5>List of guests needing accomodation</h5>
+          </li>
           <button
             type="button"
             class="list-group-item list-group-item-action"

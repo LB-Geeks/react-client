@@ -6,10 +6,6 @@
   min-width: 80%;
 }
 
-h5 {
-  color: #eb2427 !important;
-}
-
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #eb2427 !important;
@@ -52,7 +48,7 @@ h5 {
   background-color: #eb2427;
 }
 .search-click {
-  border: 1px solid #90EE90;
+  border: 1px solid #90ee90;
   outline: none;
   background-size: 22px;
   background-position: 13px;
@@ -69,15 +65,21 @@ h5 {
   height: 50px;
   width: 1040px;
   padding-left: 50px;
-  border: 1px solid #90EE90;
+  border: 1px solid #90ee90;
 }
 .search-click input {
   background: transparent;
-  border: 100px solid #90EE90;
+  border: 100px solid #90ee90;
   outline: none;
   position: absolute;
   width: 300px;
   height: 50px;
   left: 0%;
   padding: 10px;
+}
+
+.bg-grey {
+  background: #404041 !important;
+  color: white !important;
+  border-left: 4px solid #f00;
 }
